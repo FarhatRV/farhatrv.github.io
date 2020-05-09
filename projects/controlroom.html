@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Farhat Team Secrets</title>
+    <title>Crew Disruption Management</title>
     <meta charset="utf-8" />
     <meta
       name="viewport"
@@ -48,32 +48,25 @@
         <div class="inner">
           <header>
             <h1>
-              Meetrio - Meeting Notes and Audio Sync
+                Airline Crew Disruption Management
             </h1>
             <em>
-              <a
-                href="https://chrome.google.com/webstore/detail/iejdndpfnakahmcpfoceehnkikgnieng/"
-                >Link to extension in Chrome Web Store</a
-              >
-              <br />
+              
               <b>Tech Stack</b> - HTML+SASS+Javascript+ReactJS, AWS DynamoDB,
-              AWS Lambda, AWS Simple Storage service(S3), AWS API Gateway, AWS
-              CodeBuild(CI/CD), Socket.io
+              AWS Lambda, AWS Simple Storage service(S3), AWS RDS for PostgreSQL, AWS API Gateway with websockets, AWS Codepipeline, Cloudformation and
+              CodeBuild for CI/CD
               <br />
             </em>
             <br />
             <p>
-              <em><b>Problem </b></em>- Textual notes are
-              <em><b>not detailed enough</b></em
-              >, audio recordings take <em><b>too long to consume.</b></em
-              ><br />
-
-              <em><b>Solution </b></em>- Developed a Chrome extension to sync
-              meeting notes(taken in Google Docs) and audio.
+              <em><b>Problem </b></em>- Coordinators and schedulers in ground staff manage disruptions - small, large and disaster level - manually right now with a lot of telephonic commucation leading to a lot of commotion and delay in disruption management.
               <br />
-              This is a chrome extension to capture user media(here, audio) and
-              sync it with notes taken in Google Docs and provide a mechanism to
-              jump to an audio when a user selects a text in the Google Doc.
+
+              <em><b>Solution </b></em>- Developed a control room web application which relies on an intelligent solver and rule engine to automate
+              the disruption management process and requires minimal supervision.
+              <br />
+              Rule engine also takes into account all the federal service rules as well as contractual rules for all type of crews.
+              The control room also shows real time alerts and helps proactive management of disruptions.
             </p>
           </header>
           <section>
@@ -81,29 +74,23 @@
             <div class="table-wrapper">
               <ul>
                 <li>
-                  <em><b>Distributed note taking:</b></em> Take notes
-                  simultaneously with the team members using Google Docs.
+                    <em><b>Power Gantt visualization:</b></em> Crew pairing and flights stacked as Gantt charts over a timeline which provides a great view to the user on affected crews and flights.
                 </li>
                 <li>
-                  <em><b>Secure cloud storage:</b></em> Record your meeting from
-                  your browser. Audio recordings are saved securely in the
-                  Cloud.
+                    <em><b>Extensive Searchability with Filtering:</b></em> Search not only based on source, destination, crews but also on crew roles - captain, flight attendant, etc, airline, disrupted rule types,etc.
                 </li>
                 <li>
-                  <em><b>Precision recall:</b></em> Link to the exact point in
-                  the audio recording by selecting the text of interest.
+                    <em><b>Cross Platform support:</b></em> Looks great on desktop, tablet as well as mobile.
+                </li>
+                
+                <li>
+                    <em><b>Stragies: </b></em>Coordinators can configure their own strategies with rule overrides, deadhead creation, etc to be applied additionally by the solver.
                 </li>
                 <li>
-                  <em><b>Multi-session notes:</b></em> Continue note-taking in
-                  the same document over several sessions.
+                    <em><b>Active Alerting:</b></em> Real time alerting on disruptions with proper messaging supported via web-sockets.
                 </li>
                 <li>
-                  <em><b>Offline sync:</b></em> Sync textual notes to audio file
-                  at a later point.
-                </li>
-                <li>
-                  <em><b>Offline edits:</b></em> Edit notes after the meeting
-                  without affecting the text to audio sync done earlier
+                    <em><b>Tagging for Deduplication:</b></em> Proper tagging and messaging on disruption already being solved to avoid duplication.
                 </li>
               </ul>
             </div>
@@ -126,7 +113,7 @@
             </div>
           </section>
           
-        </section>
+          </section>
           <section>
             <h2>Get in touch</h2>
             <ul class="icons">
