@@ -2692,6 +2692,7 @@ button:disabled,
 .tiles article > .image img {
   display: block;
   width: 100%;
+  opacity: 0.5;
 }
 
 .tiles article > .image:before {
@@ -2912,7 +2913,12 @@ body.is-touch .tiles article .content {
 /* Header */
 
 #header {
-  padding: 8em 0 0.1em 0;
+  padding: 3em 0 0.1em 0;
+}
+
+#header .inner {
+  display: flex;
+  justify-content: space-between;
 }
 
 #header .inner .title {
